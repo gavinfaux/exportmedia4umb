@@ -12,8 +12,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>TheOutfield.UmbExt.ExportMedia</RootNamespace>
     <AssemblyName>TheOutfield.UmbExt.ExportMedia</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -33,34 +34,36 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="businesslogic">
-      <HintPath>..\..\Lib\Umb4021\businesslogic.dll</HintPath>
+    <Reference Include="businesslogic, Version=1.0.4086.28097, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>Lib\Umbraco_4.7.0\businesslogic.dll</HintPath>
     </Reference>
-    <Reference Include="cms">
-      <HintPath>..\..\Lib\Umb4021\cms.dll</HintPath>
+    <Reference Include="cms, Version=1.0.4089.21636, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>Lib\Umbraco_4.7.0\cms.dll</HintPath>
     </Reference>
-    <Reference Include="interfaces">
-      <HintPath>..\..\Lib\Umb4021\interfaces.dll</HintPath>
+    <Reference Include="interfaces, Version=1.0.4085.20549, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>Lib\Umbraco_4.7.0\interfaces.dll</HintPath>
     </Reference>
     <Reference Include="Ionic.Zip.Reduced">
-      <HintPath>..\..\Lib\DotNetZip\DotNetZip-v1.9-Reduced\Release\Ionic.Zip.Reduced.dll</HintPath>
+      <HintPath>Lib\Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System" />
+    <Reference Include="System.Core" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="umbraco">
-      <HintPath>..\..\Lib\Umb4021\umbraco.dll</HintPath>
+    <Reference Include="umbraco, Version=1.0.4090.38017, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>Lib\Umbraco_4.7.0\umbraco.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

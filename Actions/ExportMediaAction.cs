@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using umbraco;
+using umbraco.BusinessLogic.Utils;
 using umbraco.interfaces;
 
 namespace TheOutfield.UmbExt.ExportMedia.Actions
@@ -11,7 +12,7 @@ namespace TheOutfield.UmbExt.ExportMedia.Actions
     {
         public static ExportMediaAction Instance
         {
-            get { return umbraco.Singleton<ExportMediaAction>.Instance; }
+            get { return Singleton<ExportMediaAction>.Instance; }
         }
 
         public string Alias
